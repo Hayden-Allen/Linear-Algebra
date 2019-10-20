@@ -1,13 +1,10 @@
-class Vec3 {
+class Vec3 {  //3d vector used to represent points in 3d space
   constructor(x, y, z){
     this.x = x;
     this.y = y;
     this.z = z;
   }
-  dot(v){
+  dot(v){ //dot product with another Vec3
     return this.x * v.x + this.y * v.y + this.z * v.z;
-  }
-  intersectZ(z){
-    return new Vec3(this.x / this.z * z, this.y / this.z * z, z);
   }
 }
